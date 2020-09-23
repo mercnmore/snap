@@ -1,6 +1,6 @@
 <html>
   <head>
-    <meta content="https://ik.imagekit.io/vw6b6og0xz/tr:w-400,h-400/e0726c67-e101-4dc3-984c-e170a4454170.png" property="snapchat:sticker" />
+    <meta property="snapchat:sticker" content="https://ik.imagekit.io/vw6b6og0xz/tr:w-400,h-400/e0726c67-e101-4dc3-984c-e170a4454170.png" />
   </head>
   <body>
     <!–– Other Page HTML -->
@@ -17,6 +17,11 @@
         js.src = "https://sdk.snapkit.com/js/v1/create.js";
         sjs.parentNode.insertBefore(js, sjs);
       })(document, "script", "snapkit-creative-kit-sdk");
+      window.snapKitInit = function () {
+        snap.creativekit.initalizeShareButtons(
+        document.getElementsByClassName('snapchat-creative-kit-share')
+      );
+  };
     </script>
   </body>
 </html>
