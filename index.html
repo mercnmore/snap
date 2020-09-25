@@ -1,10 +1,17 @@
 <html>
   <head>
-    <meta property="snapchat:sticker" content="https://ik.imagekit.io/vw6b6og0xz/tr:w-400,h-400/e0726c67-e101-4dc3-984c-e170a4454170.png" />
+    <meta content="Snapchat" property="og:site_name" />
+    <meta content="The Fastest Way to Share a Moment!" property="og:title" />
+    <meta
+      content="https://ik.imagekit.io/vw6b6og0xz/tr:w-400,h-400/e0726c67-e101-4dc3-984c-e170a4454170.png"
+      property="snapchat:sticker"
+    />
   </head>
   <body>
     <!–– Other Page HTML -->
-    <div class="snapchat-creative-kit-share" data-share-url="https://mercnmore.com?p=e0726c67-e101-4dc3-984c-e170a4454170" data-theme="light" data-text="Share to Snap"></div>
+
+    <div class="snapchat-creative-kit-share"></div>
+
     <!-- Other Page HTML -->
     <script>
       // Load the SDK asynchronously
@@ -17,11 +24,6 @@
         js.src = "https://sdk.snapkit.com/js/v1/create.js";
         sjs.parentNode.insertBefore(js, sjs);
       })(document, "script", "snapkit-creative-kit-sdk");
-      window.snapKitInit = function () {
-        snap.creativekit.initalizeShareButtons(
-        document.getElementsByClassName('snapchat-creative-kit-share')
-      );
-  };
     </script>
   </body>
 </html>
